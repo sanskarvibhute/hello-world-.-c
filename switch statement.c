@@ -40,7 +40,7 @@ int main()
         printf("You selected option for your pointer 10.\n");
         break;
     default:
-        printf("Invalid choice! Please enter a number between 1 and 3.\n");
+        printf("Invalid choice! Please enter a number between 1 and 10.\n");
         break;
     }
 
