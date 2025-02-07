@@ -50,4 +50,4 @@ int main() {
     printf("Income Tax: Rs. %d\n", tax);
     printf("Net Income: Rs. %d\n", netIncome);
     
-    return 0;
+    return 0;}
