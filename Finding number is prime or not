@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+{
+    int n;
+    int not_prime = 0;
+    printf("enter the number for determines no.is prime or not: ");
+    scanf("%d", &n);
+    
+    if (n==0 || n==1)
+    { not_prime = 1;
+     }
+    else {
+        for (int i = 2; i <= n / 2; i++)
+    
+        if (n % i == 0 && n != 2)
+        {    not_prime=1;
+            break ;
+        }
+    
+    }
+    
+    if (not_prime == 1){
+        printf("the no. is not prime");
+        }
+    else {
+        printf("the no. is  prime ");
+    }
+    
+    return 0;
+    }
