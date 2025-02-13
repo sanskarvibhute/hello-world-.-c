@@ -28,3 +28,24 @@ int main()
     
     return 0;
     }
+
+//easier way to write this code 
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("enter no.: ");
+    scanf("%d", &n);
+    
+    for(int i = 2; i < n; i++) {
+        if(n % i == 0) {
+            printf("no. is not prime");
+        break;
+    }
+        else{
+    printf("no. is prime");
+        break; 
+        }
+    }
+    return 0;
+}
