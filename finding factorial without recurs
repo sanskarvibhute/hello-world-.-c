@@ -3,6 +3,9 @@
 int main() {
     int n, i;
     unsigned long long factorial = 1;
+/*1. *unsigned*: This means the number cannot be negative. It can only be zero or positive.
+2. *long*: This indicates that the variable can store larger numbers compared to a regular int (integer).
+3. *long long*: This is an even larger type that can store very big numbers. It's like saying "extra long" to emphasize that it can hold really large values.*/
 
     printf("Enter a non-negative integer: ");
     scanf("%d", &n);
