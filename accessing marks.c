@@ -73,6 +73,41 @@ int main(){
         }
     return 0;
 }
+
+//method 3 by reallock
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    
+    int n;
+    printf("Enter the number of element you want to enter in an array\n");
+    scanf("%d", &n);
+
+    int *marks = (int *)realloc(NULL, n * sizeof(int));
+    for (int i = 0; i < n; i++)
+    {
+        printf("Enter the value of marks student %d: ", i + 1);
+        scanf("%d", &marks[i]);
+    }
+    printf("\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("your enterd value of marks for student id %d: ", i + 1);
+        printf("is at memory location = %d:", (void *)&marks[i]);
+        printf("\t\t is = %d:", marks[i]);
+        printf("\n");
+    }
+    printf("\n\n");
+    marks = realloc(marks, 2*n*sizeof(int));
+    for (int i = 0; i < n; i++)
+    {
+        printf("your enterd value of marks for student id %d: ", i+1);
+        printf("is at memory location = %d:", (void *)&marks[i]);
+        printf("\t\t is = %d:", marks[i]);
+        printf("\n");
+    }
+    return 0;
+}
     
     
 
