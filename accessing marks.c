@@ -109,5 +109,35 @@ int main(){
     return 0;
 }
     
+//by using pointer 
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int count;
+    printf("Enter the number of elements you want to enter in an array\n");
+    scanf("%d", &count);
     
+
+    int marks[count];
+    int *ptr = marks; // Pointer to the beginning of the array also written as int *ptr = &marks[0];
+    
+    // Input loop
+    for (size_t i = 0; i < count; i++)
+    {
+        printf("Enter the value of marks for student %d: ", i + 1);
+        scanf("%d", &marks[i]);
+    }
+    
+    // Output loop
+    for (size_t i = 0; i < count; i++)
+    {
+        printf("your Entered value of marks for student id %d: ", i + 1);
+        printf("is at memory Location = %p:", (void *)&marks[i]);
+        printf("\t\t is = %d:", marks[i]);
+        printf("\n");
+    }
+    
+    return 0;
+}
+
 
