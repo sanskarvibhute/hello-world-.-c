@@ -16,3 +16,28 @@ int main()
     printf("\n %d", Nu * 10);
     return 0;
 }
+//multiplication tabel using array 
+#include <stdio.h>
+int main()
+{
+    int n;
+    int m;
+
+    printf("Enter the number for which you want to get the multiplication table of: ");
+    scanf("%d", &m);
+
+    printf("Enter the number of times which multiplication table you wish to print: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    for (size_t i = 0; i < n; i++)
+    {
+        arr[i] = m * (i + 1);
+    }
+    for (size_t i = 0; i < n; i++)
+    {
+        printf("%d X %d = %d\n", m, i + 1, arr[i]);
+    }
+
+    return 0;
+}
