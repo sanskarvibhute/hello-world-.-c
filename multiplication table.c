@@ -57,3 +57,20 @@ int main()
         printf("%d x %d = %d\n", n, i, n * i);
     }
 }
+
+// MULTIPLICATION TABLE USING FILE I/O
+#include <stdio.h>
+int main()
+{
+    FILE *fptr;
+    fptr = fopen("table.txt", "w");
+    int num;
+    printf("Enter the number you want the table of: ");
+    scanf("%d", &num);
+    for (int i = 1; i <= 10; i++)
+    {
+        fprintf(fptr, "%d X %d = %d\n", num, i, num * i);
+    }
+    fclose(fptr);
+    return 0;
+}
