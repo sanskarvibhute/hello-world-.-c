@@ -35,9 +35,9 @@ int main() {
     return 0;
 }
 
+......................................................................................................................................
 
-
-/* #include <stdio.h>
+#include <stdio.h>
 #include <stdbool.h>
 
 // This code checks if a given string is a palindrome. It reads a string from the user, calculates its length, and then compares characters from the start and end of the string moving towards the center. If all corresponding characters match, it concludes that the string is a palindrome.
@@ -78,9 +78,10 @@ int main()
     }
 
     return 0;
-} */
+} 
+..............................................................................................................................
 
-/* #include <stdio.h>
+#include <stdio.h>
 #include <stdbool.h>
 
 bool is_pelindrome(int arr[], int size)
@@ -126,9 +127,10 @@ int main()
     }
 
     return 0;
-} */
+} 
+...............................................................................................................................
 
-/* #include <stdio.h>
+#include <stdio.h>
 #include <stdbool.h>
 
 bool is_pelindrome(int arr[], int size)
@@ -184,7 +186,7 @@ int main()
     }
 
     return 0;
-} */
+} 
 
 #include <stdio.h>
 #include <string.h>
