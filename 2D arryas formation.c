@@ -14,7 +14,7 @@ int main()
     {
         for (int j = 0; j < count1; j++)
         {
-            printf("enter the value of %d element of an array \n", i);
+            printf("enter the value of %d , %d element of an array \n", i , j);
             scanf("%d", &marks[i][j]);
         }
     }
