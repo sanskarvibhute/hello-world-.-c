@@ -38,7 +38,7 @@ int main()
         scanf("%d", &dice);
         if (dice >= 1 && dice <= 6)
         {
-            printf("/nYou rolled a %d\n", dice);
+            printf("\nYou rolled a %d\n", dice);
 
             // Check if the move would exceed 100 we can't move ahed of 100
             if (player + dice <= 100)
