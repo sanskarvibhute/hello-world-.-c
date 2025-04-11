@@ -1,4 +1,69 @@
 #include <stdio.h>
+
+int main()
+{
+    int board[10][10];
+    int i, j;
+
+    // Initialize the board with numbers from 1 to 100
+    // Fill the board in a snake pattern (alternating left-to-right and right-to-left)
+    for (i = 0; i < 10; i++)
+    {
+        if (i % 2 == 0)
+        { // Even rows (0, 2, 4, 6, 8) go left to right
+            for (j = 0; j < 10; j++)
+            {
+                board[9 - i][j] = i * 10 + j + 1;
+            }
+        }
+        else
+        { // Odd rows (1, 3, 5, 7, 9) go right to left
+            for (j = 0; j < 10; j++)
+            {
+                board[9 - i][9 - j] = i * 10 + j + 1;
+            }
+        }
+    }
+
+    // Print the board
+    printf("\n===== SNAKE AND LADDER BOARD =====\n\n");
+
+    for (i = 0; i < 10; i++)
+    {
+        for (j = 0; j < 10; j++)
+        {
+            printf("%4d ", board[i][j]);
+        }
+        printf("\n\n");
+    }
+
+    printf("====================================\n\n");
+
+    printf("Lladder Positions:\n");
+    printf(" 4 -> 25\n");
+    printf(" 13 -> 46\n");
+    printf(" 33 -> 49\n");
+    printf(" 42 -> 63\n");
+    printf(" 50 -> 69\n");
+    printf(" 62 -> 81\n");
+    printf(" 74 -> 92\n");
+    printf("====================================\n\n");
+    printf("Snake Position:\n");
+    printf(" 99 -> 42\n");
+    printf(" 89 -> 53\n");
+    printf(" 76 -> 58\n");
+    printf(" 66 -> 45\n");
+    printf(" 56 -> 31\n");
+    printf(" 43 -> 18\n");
+    printf(" 40 -> 3\n");
+    printf(" 27 -> 5\n");
+
+    return 0;
+}
+
+....................................................................................................................................
+------------------------------------------------------------------------------------------------------------------------------------
+#include <stdio.h>
 int main()
 {
     // initializing the board with 0
